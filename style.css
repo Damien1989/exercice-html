@@ -9,7 +9,7 @@
     margin-top: 50px;
     margin-left: 350px;
     height: 1000px;
-    width: 200px;
+    width: 350px; /* J'agrandi la ligne à la taille donnée sur la maquette, j'ai utlisé la fonction règle de l'extention webdevelopper pour avoir l'information */
     background-color: #ee4d0a;
 }
 
@@ -28,17 +28,22 @@
     margin-bottom: 400px;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    /*grid-template-columns: repeat(3, minmax(100px, 1fr));*/
+    grid-template-columns: repeat(3, minmax(300px, 1fr));    /* Je dois redimensionner les images*/
     grid-template-rows: repeat(2, 300px);
+    margin-left: -50%; /* Je repositionne sur la gauche le bloc */
+    padding-top: 100px;
 }
 
-.block-white-text  {
-    height: 35vh;
+.block-white-text  { /* On repositionne le bloc blanc et on u ajoute un petit padding pour faire joli */
+    height: 300px;
     width: 30%;
-    display:inline-block;
-
-    margin-left: 40%;
+    display: block;
+    margin-left: 472px;
     background-color: #fdfdfd;
+    margin-top: -421px;
+    position: absolute;
+    padding: 20px;
 }
 
 .block-white-text p, h3 {

@@ -9,9 +9,10 @@
     margin-top: 50px;
     margin-left: 350px;
     height: 1000px;
-    width: 200px;
+    width: 350px;
     background-color: #ee4d0a;
 }
+
 
 .card img {
     width: 100%;
@@ -28,17 +29,21 @@
     margin-bottom: 400px;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     grid-template-rows: repeat(2, 300px);
+    margin-left: -50%;
+    padding-top:100px;
 }
 
 .block-white-text  {
-    height: 35vh;
+    height: 300px;
     width: 30%;
-    display:inline-block;
-
-    margin-left: 40%;
+    display:block;
+    margin-left: 472px;
     background-color: #fdfdfd;
+    margin-top: -421px;
+    position: absolute;
+    padding: 20px;
 }
 
 .block-white-text p, h3 {
@@ -60,4 +65,15 @@ footer p {
     display: flex;
     text-align: center;
     background-color: #601f1f;
+}
+
+@media  screen and (max-width: 700px){
+    .section-container {
+       width: 100%;
+    }
+
+    .grid {
+        width: 20px;
+
+    }
 }

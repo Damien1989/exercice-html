@@ -7,7 +7,7 @@
 .block-orange {
     margin-top: 50px;
     margin-left: 350px;
-    height: 1000px;
+    height: 1100px;
     width: 350px;
     background-color: #ee4d0a;
     position: absolute;
@@ -30,6 +30,7 @@
 
 .grid {
     z-index: 1;
+    padding-top:100px;
     margin-bottom: 400px;
     grid-gap: 10px;
     display: grid;
@@ -42,7 +43,6 @@
     ". card4 ."
     ". card5 ."
     ". card6 .";
-    padding-top:100px;
 }
 
 /* créer classe avec la propriété grid area qui informe container de la position des cards dans grids */
@@ -65,16 +65,14 @@
     grid-area: card6;
 }
 
-
-
-
 .block-white-text  {
-    height: 300px;
+    z-index: 0;
+    height: 330px;
     width: 30%;
     display:block;
     margin-left: 472px;
     background-color: #fdfdfd;
-    margin-top: -421px;
+    margin-top: 771px;
     position: absolute;
     padding: 20px;
 }
